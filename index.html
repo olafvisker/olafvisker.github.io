@@ -11,11 +11,11 @@
 
     <style>
       /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
+      * Prefixed by https://autoprefixer.github.io
+      * PostCSS: v8.3.6,
+      * Autoprefixer: v10.3.1
+      * Browsers: last 4 version
+      */
 
       @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
 
@@ -51,8 +51,8 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        -webkit-animation: fadein 2s;
-        animation: fadein 2s;
+        -webkit-animation: fadeup 2s;
+        animation: fadeup 2s;
       }
 
       .footer {
@@ -60,12 +60,25 @@
         bottom: 0;
         margin: 1em;
         font-size: 1.25em;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-animation: fadein 2s;
+        animation: fadein 2s;
       }
 
       @-webkit-keyframes fadein {
         from {
           opacity: 0;
         }
+
         to {
           opacity: 1;
         }
@@ -75,7 +88,32 @@
         from {
           opacity: 0;
         }
+
         to {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeup {
+        from {
+          transform: translate3d(0, 40px, 0);
+          opacity: 0;
+        }
+
+        to {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeup {
+        from {
+          transform: translate3d(0, 40px, 0);
+          opacity: 0;
+        }
+
+        to {
+          transform: translate3d(0, 0, 0);
           opacity: 1;
         }
       }
