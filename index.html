@@ -10,13 +10,26 @@
     <meta name="author" content="VISK" />
 
     <style>
+      /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
       @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
 
       html,
       body {
         font-family: "Hind Siliguri", sans-serif;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         height: 100%;
         width: 100%;
@@ -29,9 +42,16 @@
         font-size: 5em;
         border: 1px solid #e63939;
         padding: 0.25em 0.5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-animation: fadein 2s;
         animation: fadein 2s;
       }
 
@@ -40,6 +60,15 @@
         bottom: 0;
         margin: 1em;
         font-size: 1.25em;
+      }
+
+      @-webkit-keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
       @keyframes fadein {
